@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.qa.listener.TestListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/AppiumPractice/TDDFramework">
+    <parameter name="emulator" value="true"></parameter>
+    <parameter name="platformName" value="Android"></parameter>
+    <parameter name="platformVersion" value="9.0"></parameter>
+    <parameter name="deviceName" value="Pixel_3a_XL_API_31"></parameter>
+        <parameter name="udid" value="emulator-5554"></parameter>
+        <classes>
+            <class name="com.qa.test.LoginTests"></class>
+            <class name="com.qa.test.ProductTests"></class>
+        </classes>
+    </test>
+</suite>
